@@ -40,7 +40,7 @@ Auth::routes();
 //     auth()->user()->unreadNotifications->markAsRead();
 // });
 
-Route::get('user/consultas', 'ConsultaController@Relatorio')
+Route::get('user/consultas', 'ConsultaController@Relatorio');
 
 Route::resource('medicos', 'MedicoController');
 Route::resource('consultas', 'ConsultaController');

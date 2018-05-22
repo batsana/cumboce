@@ -27,7 +27,5 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
-     public function user(){
-        return $this->belongsToOne('App\User');
-    }
+  
 }

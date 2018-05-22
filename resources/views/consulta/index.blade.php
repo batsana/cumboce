@@ -38,12 +38,7 @@
                                         <th>{{$consulta->data}}</th>
                                             <th>{{$consulta->medico_id}}</th>
 
-                                    
-
-                                         <!--  @foreach($consulta->getUsera as $u)
-                                            <th>{{$u->name}}</th> 
-                                            
-                                        @endforeach -->
+                                
                                          <th>{{$consulta->estado}}</th>
                                       
                                        

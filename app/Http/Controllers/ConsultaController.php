@@ -21,11 +21,18 @@ class ConsultaController extends Controller
 
         return view('consulta.index', compact('consultass'));
 
-        $users = DB::table('consultas')
+    }
+
+    public function Relatorio()
+    {
+
+        $usersconsulta = DB::table('consultas')
             ->join('users', 'consultas.user_id', '=', 'users.id')
             ->join('medicos', 'consultas.medico_id', '=', 'medicos.user_id')
             ->select('users.*', 'medicos.*', 'consultas.*')
             ->get();
+
+            return view('consulta.index', compact('usersconsulta'));
 
             return response()->json($users);
     }
